@@ -1,0 +1,598 @@
+/* ==========================================================================
+   💥 FUENTE DE NARUTO ORIGINAL SELECCIONADA (BASE64 INTEGRADO - VERSIÓN ANIME)
+   ========================================================================== */
+@font-face {
+    font-family: 'NJNarutoAnimeOfficial';
+    src: url('data:font/woff2;charset=utf-8;base64,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') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --azul-institucional: #0B1B3D;   
+    --azul-suave-fondo: #F0F4F8;     
+    --oro-institucional: #D4AF37;    
+    --oro-pastel: #FFF9E6;            
+    --texto-gris-oscuro: #1A202C;    
+    --blanco-puro: #FFFFFF;
+    
+    /* Gradientes Ópticos Premium */
+    --oro-brillante-gradiente: linear-gradient(135deg, #FFF5C2 0%, #D4AF37 50%, #8A6605 100%);
+    --sharingan-gradient: linear-gradient(90deg, #FF2E00 0%, #FF6600 50%, #FFB300 100%);
+    --cyber-dark-overlay: rgba(11, 27, 61, 0.96);
+    
+    /* Colores Didácticos Vívidos */
+    --pastel-mates: #2980B9;
+    --pastel-lectura: #8E44AD;
+    --pastel-lengua: #27AE60;
+    
+    /* Tipografías */
+    --fuente-artistica-curva: 'Playfair Display', serif;
+    --fuente-titulos-bloques: 'Outfit', sans-serif;
+    --fuente-textos-lectura: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* REGLAS GENERALES Y RENDIMIENTO ACELERADO POR HARDWARE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+    background-color: #F8FAFC;
+    color: var(--texto-gris-oscuro);
+    font-family: var(--fuente-textos-lectura);
+    line-height: 1.75;
+    position: relative;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 🎈 CONTENEDOR DE AURAS INTELIGENTES (INMERSIVO) */
+.burbujas-contenedor {
+    position: fixed; width: 100vw; height: 100vh; top: 0; left: 0; z-index: -2; pointer-events: none; overflow: hidden;
+}
+.burbuja { 
+    position: absolute; border-radius: 50%; opacity: 0.25; 
+    animation: flotarGlow 20s infinite alternate ease-in-out; filter: blur(60px); 
+    will-change: transform;
+}
+.b-azul { width: 500px; height: 500px; background: radial-gradient(circle, #D2E9FF 0%, rgba(52,152,219,0.1) 100%); top: -5%; left: -10%; }
+.b-oro { width: 450px; height: 450px; background: radial-gradient(circle, var(--oro-pastel) 0%, rgba(212,175,57,0.08) 100%); top: 40%; right: -10%; animation-delay: -5s; }
+.b-verde { width: 400px; height: 400px; background: radial-gradient(circle, #E1FCEF 0%, rgba(46,204,113,0.08) 100%); bottom: -5%; left: -5%; animation-delay: -10s; }
+
+@keyframes flotarGlow {
+    0% { transform: translateY(0) scale(1) rotate(0deg); }
+    100% { transform: translateY(50px) scale(1.15) rotate(30deg); filter: blur(80px); }
+}
+
+/* ENCABEZADO GLASSMORPHISM CRISTALINO */
+.header-institucional {
+    position: sticky; top: 0; z-index: 1000;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 2px solid rgba(212, 175, 57, 0.25);
+    box-shadow: 0 10px 40px rgba(11, 27, 61, 0.04);
+}
+
+.header-top {
+    max-width: 1240px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 18px 24px;
+}
+
+.logo-seccion { display: flex; align-items: center; gap: 20px; }
+.logo-imagen-mariposa {
+    width: 68px; height: 68px; padding: 6px; border-radius: 20px; background-color: var(--blanco-puro);
+    border: 2px solid var(--oro-institucional);
+    box-shadow: 0 8px 20px rgba(11, 27, 61, 0.05);
+}
+.header-institucional:hover .logo-imagen-mariposa { transform: scale(1.1) rotate(10deg); box-shadow: 0 12px 25px rgba(212,175,57,0.25); }
+.logo-imagen-mariposa img { width: 100%; height: 100%; object-fit: contain; }
+
+.texto-institucional h1 {
+    font-family: var(--fuente-artistica-curva); font-style: italic;
+    font-weight: 800; font-size: 1.85rem; color: var(--azul-institucional);
+    letter-spacing: -0.5px;
+}
+.tagline { font-size: 0.82rem; color: #4A5568; text-transform: uppercase; letter-spacing: 2px; font-weight: 800; margin-top: 4px; }
+
+.proyecto-seccion { text-align: right; }
+.pildora-paec {
+    background: var(--oro-brillante-gradiente); color: var(--azul-institucional);
+    font-size: 0.72rem; font-weight: 900; padding: 5px 16px; border-radius: 100px; display: inline-block; margin-bottom: 6px;
+    box-shadow: 0 4px 15px rgba(212,175,57,0.35);
+    letter-spacing: 1px;
+}
+.proyecto-seccion h2 { font-family: var(--fuente-titulos-bloques); font-size: 1.4rem; font-weight: 800; color: var(--azul-institucional); }
+
+/* MENÚ DE NAVEGACIÓN ESTILO ARMADURA CYBER */
+.menu-navegacion { background-color: var(--azul-institucional); position: relative; overflow: hidden; box-shadow: inset 0 10px 20px rgba(0,0,0,0.2); }
+.menu-navegacion ul { max-width: 1240px; margin: 0 auto; list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
+.menu-navegacion ul li a {
+    color: #E2E8F0; text-decoration: none; font-size: 0.9rem; font-weight: 700; padding: 18px 28px; display: inline-block; position: relative;
+    letter-spacing: 0.5px;
+}
+.menu-navegacion ul li a span { position: relative; z-index: 2; }
+.menu-navegacion ul li a::after {
+    content: ''; position: absolute; bottom: 0; left: 50%; width: 0; height: 5px; 
+    background: var(--sharingan-gradient); transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); transform: translateX(-50%);
+}
+.menu-navegacion ul li a:hover::after, .menu-navegacion ul li a.active::after { width: 100%; }
+.menu-navegacion ul li a:hover, .menu-navegacion ul li a.active { color: var(--blanco-puro); background-color: rgba(255, 255, 255, 0.04); text-shadow: 0 0 10px rgba(255,255,255,0.3); }
+
+.contenedor-principal { max-width: 1240px; margin: 60px auto; padding: 0 24px; }
+
+/* 🌟 SECCIÓN BIENVENIDA PREMIUM CON ESCANEO INTERACTIVO */
+.bienvenida-seccion-premium {
+    display: flex; background-color: var(--blanco-puro); border-radius: 40px; overflow: hidden;
+    box-shadow: 0 30px 70px rgba(11,27,61,0.08); border: 1px solid rgba(226,232,240,0.7); align-items: center; margin-bottom: 70px;
+}
+.marco-parallax-sh { 
+    flex: 1; min-width: 480px; height: 460px; position: relative; overflow: hidden; 
+    background-color: var(--azul-institucional);
+}
+.imagen-epic-parallax { 
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transform: scale(1.01); transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+}
+.resplandor-sh {
+    position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+    transform: skewX(-30deg); z-index: 2; pointer-events: none;
+}
+.bienvenida-seccion-premium:hover .resplandor-sh { animation: shineEffect 1.2s cubic-bezier(0.16, 1, 0.3, 1); }
+.bienvenida-seccion-premium:hover .imagen-epic-parallax { transform: scale(1.06) rotate(0.5deg); filter: brightness(1.05) contrast(1.02); }
+
+.texto-bienvenida-didactica { flex: 1.2; padding: 65px; }
+.saludo-pequeño-sh { 
+    font-size: 0.85rem; font-weight: 900; color: #FF2E00; text-transform: uppercase; letter-spacing: 1.5px;
+    display: inline-block; margin-bottom: 14px; background: rgba(255,46,0,0.07); padding: 5px 16px; border-radius: 14px;
+}
+.texto-bienvenida-didactica h3 {
+    font-family: var(--fuente-artistica-curva); font-style: italic;
+    font-size: 3.6rem; color: var(--azul-institucional); font-weight: 800; line-height: 1.1;
+}
+
+.linea-gradiente-animada { 
+    width: 160px; height: 6px; 
+    background: var(--sharingan-gradient);
+    margin: 22px 0 28px 0; 
+    border-radius: 50px; 
+    box-shadow: 0 4px 15px rgba(255, 46, 0, 0.4);
+}
+.texto-bienvenida-didactica p { font-size: 1.1rem; color: #4A5568; text-align: justify; font-weight: 500; line-height: 1.8; }
+
+/* TARJETAS DIDÁCTICAS TRIDIDÁCTICAS CON BORDE LÍQUIDO */
+.mvv-seccion { display: flex; gap: 35px; margin-bottom: 70px; }
+.tarjeta-didactica { 
+    flex: 1; background-color: var(--blanco-puro); border-radius: 32px; padding: 50px 40px; 
+    border: 2px solid #F1F5F9; position: relative; box-shadow: 0 15px 35px rgba(0,0,0,0.01);
+    transform-style: preserve-3d; perspective: 1000px;
+}
+.tarjeta-didactica:hover { transform: translateY(-12px) scale(1.025) rotateX(1deg); }
+.t-mision:hover { border-color: var(--pastel-mates); box-shadow: 0 25px 50px rgba(52, 152, 219, 0.15); }
+.t-vision:hover { border-color: var(--oro-institucional); box-shadow: 0 25px 50px rgba(212, 175, 57, 0.18); }
+.t-valores:hover { border-color: var(--pastel-lengua); box-shadow: 0 25px 50px rgba(46, 204, 113, 0.15); }
+
+.icono-flotante { width: 56px; height: 56px; border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 28px; box-shadow: inset 0 -2px 6px rgba(0,0,0,0.03); }
+.ic-azul { background-color: #E6F4FE; color: var(--pastel-mates); }
+.ic-oro { background-color: var(--oro-pastel); color: var(--oro-institucional); }
+.ic-verde { background-color: #E8FDF2; color: var(--pastel-lengua); }
+
+.tarjeta-didactica h4 { font-family: var(--fuente-titulos-bloques); font-size: 1.6rem; color: var(--azul-institucional); font-weight: 800; margin-bottom: 14px; letter-spacing: -0.5px; }
+.tarjeta-didactica p { font-size: 1.02rem; color: #4A5568; text-align: justify; line-height: 1.7; }
+
+.lista-valores-bonita li { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; font-size: 1.02rem; color: #4A5568; font-weight: 600; }
+.punto { width: 11px; height: 11px; border-radius: 50%; display: inline-block; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+.p-1 { background-color: var(--pastel-mates); }
+.p-2 { background-color: var(--oro-institucional); }
+.p-3 { background-color: var(--pastel-lengua); }
+
+/* SECCIÓN COGNITIVA INTERACTIVA (HACK Y QUIZ) */
+.seccion-didactica-interactiva { display: flex; gap: 35px; margin-bottom: 80px; align-items: stretch; }
+.tarjeta-hack-estudio { 
+    flex: 1; background-color: #FFFDF4; border: 2px dashed #E2C46E; border-radius: 32px; padding: 45px;
+    box-shadow: 0 15px 35px rgba(212,175,57,0.06);
+}
+.encabezado-hack { color: #A3761A; font-weight: 900; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+.encabezado-hack i { font-size: 1.4rem; animation: pulseGlow 2.5s infinite ease-in-out; }
+
+@keyframes pulseGlow { 0%, 100% { opacity: 0.7; transform: scale(1); } 50% { opacity: 1; transform: scale(1.15); filter: drop-shadow(0 0 8px #FF6600); } }
+
+.tarjeta-hack-estudio h5 { font-family: var(--fuente-titulos-bloques); font-size: 1.6rem; color: var(--azul-institucional); font-weight: 800; margin-bottom: 14px; }
+.tarjeta-hack-estudio p { font-size: 1.05rem; color: #4A5568; text-align: justify; line-height: 1.75; }
+
+.contenedor-mini-quiz { flex: 1.5; display: flex; flex-direction: column; justify-content: space-between; }
+.titulo-quiz { font-size: 0.88rem; font-weight: 900; text-transform: uppercase; color: #718096; letter-spacing: 1.5px; margin-bottom: 18px; }
+.parrilla-quiz-cards { display: flex; gap: 24px; height: 100%; }
+
+/* EFECTO GIRO CINEMÁTICO 3D - CORREGIDO PARA ALTA LEGIBILIDAD */
+.quiz-card-3d { flex: 1; height: 190px; perspective: 1500px; }
+.quiz-card-interno { position: relative; width: 100%; height: 100%; text-align: center; transform-style: preserve-3d; transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1); }
+.quiz-card-3d:hover .quiz-card-interno { transform: rotateY(180deg); }
+
+.quiz-frente, .quiz-atras { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 28px; padding: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 15px 35px rgba(11,27,61,0.03); }
+.quiz-frente { background-color: var(--blanco-puro); border: 2px solid #E2E8F0; }
+.quiz-frente p { font-size: 1.05rem; font-weight: 700; color: var(--azul-institucional); line-height: 1.4; }
+.num-q { width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin-bottom: 14px; font-weight: 900; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.num-q.color-mates { background-color: #E6F4FE; color: var(--pastel-mates); }
+.num-q.color-lengua { background-color: #E8FDF2; color: var(--pastel-lengua); }
+
+/* --- Ajustes de Contraste en el Reverso --- */
+.quiz-atras { transform: rotateY(180deg); color: #FFFFFF !important; padding: 25px; }
+.fondo-mates { background: linear-gradient(135deg, #1F618D 0%, #2980B9 100%); box-shadow: 0 15px 35px rgba(52,152,219,0.35); }
+.fondo-lengua { background: linear-gradient(135deg, #1E8449 0%, #27AE60 100%); box-shadow: 0 15px 35px rgba(46,204,113,0.35); }
+
+.quiz-atras h6 { 
+    font-family: var(--fuente-titulos-bloques); 
+    font-size: 1.3rem; 
+    font-weight: 900; 
+    margin-bottom: 8px; 
+    color: #FFFFFF !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Sombra para separar de forma limpia el texto del fondo */
+}
+.quiz-atras p { 
+    font-size: 0.98rem; 
+    font-weight: 700; /* Texto más grueso para evitar que se pierda */
+    line-height: 1.5; 
+    color: #FFFFFF !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); 
+}
+
+/* REJILLA DE ACCESO RÁPIDO A MATERIAS */
+.acceso-rapido-didactico { margin-bottom: 50px; }
+.encabezado-acceso { text-align: center; margin-bottom: 55px; }
+.encabezado-acceso h3 { font-family: var(--fuente-artistica-curva); font-style: italic; font-size: 3.2rem; color: var(--azul-institucional); font-weight: 800; }
+.subtitulo-limpio { color: #718096; font-size: 1.1rem; font-weight: 500; margin-top: 6px; }
+.parrilla-botones-interactivos { display: flex; justify-content: center; gap: 35px; flex-wrap: wrap; }
+
+/* CONTENEDORES DE RECURSOS CON REBORDES FLUIDOS */
+.card-modulo { 
+    text-decoration: none; width: 340px; height: 230px; background-color: var(--blanco-puro); 
+    border-radius: 36px; border: 2px solid #E2E8F0; display: flex; position: relative; overflow: hidden;
+    box-shadow: 0 12px 40px rgba(11,27,61,0.02);
+}
+
+.card-modulo::after {
+    content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 0; 
+    opacity: 0; transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+/* Efectos de Hover con Inyección de Chakra en Líneas Laterales */
+.mod-mates:hover::after { background: var(--azul-institucional); width: 10px; opacity: 1; }
+.mod-lectura:hover::after { background: #FF2E00; width: 10px; opacity: 1; }
+.mod-lengua:hover::after { background: var(--oro-institucional); width: 10px; opacity: 1; }
+
+.cuerpo-card-modulo { display: flex; flex-direction: column; justify-content: space-between; width: 100%; height: 100%; padding: 35px 30px 28px 35px; z-index: 2; }
+.tag-modulo { font-size: 0.72rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; }
+.tm-mates { color: var(--pastel-mates); }
+.tm-lectura { color: var(--pastel-lectura); }
+.tm-lengua { color: var(--pastel-lengua); }
+.cuerpo-card-modulo h5 { font-family: var(--fuente-titulos-bloques); font-size: 1.4rem; font-weight: 800; color: var(--azul-institucional); line-height: 1.35; margin-top: 12px; }
+
+.info-bottom { display: flex; justify-content: space-between; align-items: center; }
+.txt-comenzar { font-size: 0.85rem; font-weight: 900; color: #A0AEC0; text-transform: uppercase; letter-spacing: 1px; }
+.icon-animado-didactico { font-size: 3.2rem; color: #F1F5F9; transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+/* Estados Hover Dinámicos Ultra-Premium */
+.card-modulo:hover { transform: translateY(-10px) scale(1.03); }
+.mod-mates:hover { border-color: var(--pastel-mates); box-shadow: 0 20px 45px rgba(52, 152, 219, 0.2); }
+.mod-mates:hover .icon-animado-didactico { color: var(--pastel-mates); transform: scale(1.2) rotate(-15deg); filter: drop-shadow(0 8px 15px rgba(52,152,219,0.35)); }
+.mod-mates:hover .txt-comenzar { color: var(--pastel-mates); }
+
+.mod-lectura:hover { border-color: var(--pastel-lectura); box-shadow: 0 20px 45px rgba(142, 68, 173, 0.2); }
+.mod-lectura:hover .icon-animado-didactico { color: var(--pastel-lectura); transform: scale(1.2) translateY(-5px); filter: drop-shadow(0 8px 15px rgba(142,68,173,0.35)); }
+.mod-lectura:hover .txt-comenzar { color: var(--pastel-lectura); }
+
+.mod-lengua:hover { border-color: var(--pastel-lengua); box-shadow: 0 20px 45px rgba(46, 204, 113, 0.2); }
+.mod-lengua:hover .icon-animado-didactico { color: var(--pastel-lengua); transform: scale(1.2) rotate(15deg); filter: drop-shadow(0 8px 15px rgba(46,204,113,0.35)); }
+.mod-lengua:hover .txt-comenzar { color: var(--pastel-lengua); }
+
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+
+:root{
+    --oro-institucional: #D4AF37;
+}
+
+/* ==========================================================================
+   ANIMACIONES
+   ========================================================================== */
+
+@keyframes chakraGlow{
+    0%{
+        filter:
+            drop-shadow(0 0 4px #ff6a00)
+            drop-shadow(0 0 10px #ff7b00);
+    }
+
+    50%{
+        filter:
+            drop-shadow(0 0 12px #ff6a00)
+            drop-shadow(0 0 25px #ff7b00)
+            drop-shadow(0 0 45px #ff9500);
+    }
+
+    100%{
+        filter:
+            drop-shadow(0 0 4px #ff6a00)
+            drop-shadow(0 0 10px #ff7b00);
+    }
+}
+
+/* ==========================================================================
+   PIE DE PÁGINA
+   ========================================================================== */
+
+.pie-pagina-original{
+    background-color: var(--azul-institucional);
+    color: var(--blanco-puro);
+
+    padding: 60px 24px;
+
+    text-align: center;
+
+    font-family: var(--fuente-textos-lectura);
+
+    border-top: 6px solid var(--oro-institucional);
+
+    box-shadow:
+        0 -15px 40px rgba(11,27,61,.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina-original p{
+    margin: 12px 0;
+
+    font-weight: 500;
+    letter-spacing: .5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.pie-pagina-original a{
+    color: var(--blanco-puro);
+    text-decoration: none;
+    font-weight: 700;
+
+    transition: all .3s ease;
+}
+
+.pie-pagina-original a:hover{
+    color: var(--oro-institucional);
+}
+
+/* ==========================================================================
+   LOGO / EQUIPO
+   ========================================================================== */
+
+.pie-equipo{
+    width: 100%;
+    max-width: 320px;
+
+    margin: 0 auto 30px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.naruto-logo-svg{
+    display: block;
+
+    width: 100%;
+    max-width: 360px;
+
+    height: auto;
+
+    margin: 15px auto;
+
+    filter: drop-shadow(5px 5px 0 #040A18);
+
+    animation: auraSharinganActivo 4s infinite ease-in-out;
+
+    transition:
+        transform .5s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+
+.naruto-logo-svg:hover{
+    transform: scale(1.08) rotate(-1deg);
+}
+
+/* ==========================================================================
+   TEXTO SVG
+   ========================================================================== */
+
+.naruto-path{
+    fill: url(#sharinganGradientePerfecto);
+
+    stroke: var(--blanco-puro);
+    stroke-width: 6px;
+
+    stroke-linejoin: round;
+    stroke-linecap: round;
+
+    cursor: pointer;
+
+    transition: all .35s ease;
+}
+
+/* Destello naranja al pasar el cursor */
+
+.naruto-path:hover{
+    animation: chakraGlow .8s infinite ease-in-out;
+
+    filter:
+        drop-shadow(0 0 5px #ff6a00)
+        drop-shadow(0 0 10px #ff7b00)
+        drop-shadow(0 0 20px #ff9500)
+        drop-shadow(0 0 35px #ffae00);
+}
+
+.naruto-path:hover path{
+    stroke: #FFD280;
+    stroke-width: 7px;
+}
+
+.naruto-path path{
+    fill: url(#sharinganGradientePerfecto);
+    font-family: 'NJNarutoAnimeOfficial', sans-serif;
+
+    transition: all .35s ease;
+}
+
+/* ==========================================================================
+   DATOS
+   ========================================================================== */
+
+.pie-datos{
+    width: 100%;
+
+    text-align: center;
+
+    margin-bottom: 8px;
+
+    color: #CBD5E0;
+
+    font-size: .95rem;
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-bold{
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    color: var(--blanco-puro);
+
+    font-family: var(--fuente-titulos-bloques);
+}
+
+/* ==========================================================================
+   REDES SOCIALES
+   ========================================================================== */
+
+.pie-redes{
+    width: 100%;
+
+    text-align: center;
+
+    margin: 5px 0 10px;
+}
+
+.pie-redes a{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 22px;
+
+    border-radius: 100px;
+
+    background: rgba(255,255,255,.05);
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    color: var(--oro-institucional);
+
+    font-family: 'Outfit', sans-serif;
+
+    font-size: .95rem;
+
+    font-weight: 700;
+
+    transition: all .3s ease;
+}
+
+.pie-redes a:hover{
+    background: var(--sharingan-gradient);
+
+    color: var(--azul-institucional);
+
+    border-color: transparent;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 25px rgba(255,46,0,.45);
+
+    text-shadow:
+        0 0 10px rgba(255,255,255,.6);
+}
+
+/* ==========================================================================
+   COPYRIGHT
+   ========================================================================== */
+
+.copyright{
+    width: 100%;
+
+    margin-top: 30px;
+
+    text-align: center;
+
+    color: #718096;
+
+    font-size: .8rem;
+
+    opacity: .6;
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width:768px){
+
+    .pie-pagina-original{
+        padding: 50px 20px;
+    }
+
+    .naruto-logo-svg{
+        max-width: 280px;
+    }
+
+    .pie-datos{
+        font-size: .9rem;
+    }
+
+    .pie-redes a{
+        padding: 8px 18px;
+        font-size: .9rem;
+    }
+}
+/* RESPONSIVIDAD ADAPTATIVA ULTRA-FLUIDA */
+@media (max-width: 992px) {
+    .bienvenida-seccion-premium { flex-direction: column; border-radius: 32px; }
+    .marco-parallax-sh { width: 100%; height: 340px; min-width: 100%; }
+    .texto-bienvenida-didactica { padding: 45px 30px; }
+    .texto-bienvenida-didactica h3 { font-size: 2.8rem; }
+    .mvv-seccion { flex-direction: column; gap: 25px; }
+    .seccion-didactica-interactiva { flex-direction: column; gap: 25px; }
+}
+@media (max-width: 768px) {
+    .header-top { flex-direction: column; text-align: center; gap: 18px; padding: 20px 15px; }
+    .proyecto-seccion { text-align: center; }
+    .menu-navegacion ul { flex-direction: column; align-items: center; }
+    .menu-navegacion ul li a { padding: 14px 20px; width: 100%; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .parrilla-quiz-cards { flex-direction: column; gap: 20px; }
+    .quiz-card-3d { height: 170px; }
+    .naruto-logo-svg { width: 280px; }
+    .parrilla-botones-interactivos { gap: 20px; }
+    .card-modulo { width: 100%; height: 210px; }
+}
