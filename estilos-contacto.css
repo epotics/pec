@@ -1,0 +1,701 @@
+/* ==========================================================================
+   🌌 REPOSITORIO DIGITAL EPO 5 - EDICIÓN SUPREMA E IMPRESIONANTE (FINAL)
+   ========================================================================== */
+
+:root {
+    --white: #ffffff;
+    --bg-sutil: #f8fafc;
+    --navy-blue: #0B1B3D;
+    --royal-blue: #2563eb;
+    --sh-red: #E63900;
+    --sh-naranja: #ff6600;
+    --sh-gold: #FFB300;
+    --gray-text: #475569;
+    --texto-oscuro: #1e293b;
+    --soft-border: rgba(11, 27, 61, 0.08);
+    --sombra-premium: 0 20px 40px rgba(11, 27, 61, 0.04);
+    --cyber-glow: rgba(37, 99, 235, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--texto-oscuro);
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+/* --- ✨ DETALLE ESPECIAL 1: LIENZO AMBIENTAL CON PARTÍCULAS CUÁNTICAS --- */
+.background-canvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.background-canvas::before,
+.background-canvas::after {
+    content: '';
+    position: absolute;
+    width: 8px; height: 8px;
+    background: rgba(37, 99, 235, 0.15);
+    border-radius: 50%;
+    box-shadow: 200px 400px 0 rgba(230, 57, 0, 0.1), 
+                600px 200px 0 rgba(255, 179, 0, 0.12), 
+                800px 700px 0 rgba(37, 99, 235, 0.1),
+                100px 800px 0 rgba(255, 102, 0, 0.08);
+    animation: floatParticles 20s linear infinite;
+}
+
+.background-canvas::after {
+    width: 5px; height: 5px;
+    box-shadow: 400px 100px 0 rgba(37, 99, 235, 0.08), 
+                300px 600px 0 rgba(230, 57, 0, 0.1), 
+                900px 300px 0 rgba(255, 179, 0, 0.08);
+    animation-duration: 30s;
+    animation-delay: -5s;
+}
+
+@keyframes floatParticles {
+    0% { transform: translateY(100vh) scale(0.8); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+}
+
+.glow-orb {
+    position: absolute;
+    width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.04) 0%, transparent 75%);
+    top: -150px; right: -150px;
+}
+
+/* --- MAQUETACIÓN --- */
+.layout-contacto {
+    max-width: 1200px;
+    margin: 60px auto 0 auto;
+    padding: 0 24px;
+}
+
+.introduccion-contacto {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.introduccion-contacto h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--navy-blue);
+    margin: 15px 0;
+}
+
+.introduccion-contacto p {
+    color: var(--gray-text);
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+}
+
+/* --- REJILLA Y TARJETAS INTERACTIVAS 3D CRISOPREMA --- */
+.grid-principal {
+    display: flex;
+    gap: 35px;
+}
+
+.columna-info, .columna-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* 💎 DETALLE ESPECIAL 2: REFLEJO ULTRA VELOZ Y TRANSICIÓN DINÁMICA */
+.glass-card {
+    background: var(--white);
+    border: 1px solid var(--soft-border);
+    border-radius: 24px;
+    padding: 35px;
+    position: relative;
+    box-shadow: var(--sombra-premium);
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s, border-color 0.4s;
+}
+
+.glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -180%;
+    width: 60%; height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.8), rgba(37, 99, 235, 0.1), transparent);
+    transform: skewX(-30deg);
+    transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover::before {
+    left: 180%;
+}
+
+.glass-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(11, 27, 61, 0.12);
+    border-color: rgba(37, 99, 235, 0.2);
+}
+
+/* ⚡ DETALLE ESPECIAL 3: CYBER GLOW EN EL CONTENEDOR DEL FORMULARIO AL ENFOCAR */
+.glass-card:has(input:focus), 
+.glass-card:has(textarea:focus) {
+    border-color: var(--royal-blue);
+    box-shadow: 0 0 35px var(--cyber-glow), var(--sombra-premium);
+}
+
+.card-icon {
+    position: absolute;
+    top: 30px; right: 30px;
+    font-size: 1.4rem;
+    color: var(--royal-blue);
+    opacity: 0.15;
+}
+
+.glass-card h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.4rem;
+    color: var(--navy-blue);
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.data-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.data-item i { font-size: 1.3rem; color: var(--royal-blue); width: 24px; text-align: center; }
+.data-item small { display: block; font-size: 0.75rem; color: var(--gray-text); font-weight: 700; text-transform: uppercase; }
+.data-item a, .data-item p { margin: 0; font-size: 1rem; color: var(--texto-oscuro); text-decoration: none; font-weight: 600; }
+.data-item a:hover { color: var(--royal-blue); }
+
+.facebook-btn {
+    display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%;
+    background: #1877F2; color: var(--white); padding: 16px; border-radius: 14px;
+    text-decoration: none; font-weight: 700; font-family: 'Outfit', sans-serif;
+    box-shadow: 0 4px 15px rgba(24, 119, 242, 0.2); transition: background 0.3s, transform 0.2s;
+    box-sizing: border-box;
+}
+.facebook-btn:hover { background: #145dbf; transform: scale(1.01); }
+
+/* MAPA Y SONAR */
+.map-wrapper { width: 100%; height: 220px; border-radius: 16px; overflow: hidden; position: relative; border: 1px solid var(--soft-border); }
+.map-wrapper iframe { width: 100%; height: 100%; border: none; }
+.sonar-ping {
+    position: absolute; top: 50%; left: 50%; width: 16px; height: 16px;
+    background: var(--sh-red); border-radius: 50%; transform: translate(-50%, -50%);
+    pointer-events: none; z-index: 10; box-shadow: 0 0 10px var(--sh-red);
+}
+.sonar-ping::after {
+    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(230, 57, 0, 0.4); border-radius: 50%; animation: ping 2.2s infinite ease-out;
+}
+@keyframes ping { 0% { transform: scale(1); opacity: 1; } 100% { transform: scale(4.5); opacity: 0; } }
+
+/* FORMULARIO */
+.form-header { text-align: center; margin-bottom: 35px; }
+.form-header i { font-size: 2.2rem; color: var(--royal-blue); margin-bottom: 10px; }
+.custom-form .input-box { position: relative; margin-bottom: 30px; }
+.custom-form input, .custom-form textarea {
+    width: 100%; background: var(--bg-sutil); border: 1px solid var(--soft-border);
+    padding: 16px 18px; border-radius: 14px; font-size: 0.95rem; color: var(--texto-oscuro); outline: none; transition: all 0.3s; font-family: inherit;
+}
+.custom-form label { position: absolute; left: 18px; top: 16px; color: var(--gray-text); transition: all 0.3s ease; pointer-events: none; }
+.custom-form .line { position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background: var(--royal-blue); transition: all 0.3s; }
+
+.custom-form input:focus ~ label, .custom-form input:not(:placeholder-shown) ~ label,
+.custom-form textarea:focus ~ label, .custom-form textarea:not(:placeholder-shown) ~ label {
+    top: -10px; left: 12px; font-size: 0.75rem; background: var(--royal-blue); color: var(--white); padding: 2px 10px; border-radius: 6px; font-weight: 700;
+}
+.custom-form input:focus, .custom-form textarea:focus { background: var(--white); border-color: var(--royal-blue); }
+.custom-form input:focus ~ .line, .custom-form textarea:focus ~ .line { width: 100%; left: 0; }
+
+.submit-btn {
+    width: 100%; background: linear-gradient(135deg, var(--navy-blue) 0%, var(--royal-blue) 100%);
+    color: var(--white); border: none; padding: 18px; border-radius: 14px; font-family: 'Outfit', sans-serif;
+    font-weight: 700; font-size: 1.05rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; transition: all 0.3s;
+}
+.submit-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(37, 99, 235, 0.25); }
+
+/* ==========================================================================
+   🎮 ACTIVIDAD INTERACTIVA: EL SINTONIZADOR DE ENERGÍA PAEC (CYBER MÓDULO)
+   ========================================================================== */
+.grand-finale-activity {
+    margin: 80px 0 120px 0;
+    text-align: center;
+}
+.pulse-title { font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 800; color: var(--navy-blue); }
+.pulse-subtitle { color: var(--gray-text); margin-bottom: 40px; font-size: 0.95rem; }
+
+.game-wrapper {
+    display: flex; max-width: 850px; margin: 0 auto;
+    background: var(--bg-sutil); border: 1px solid var(--soft-border);
+    border-radius: 32px; padding: 30px; gap: 40px; align-items: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+input[name="paec-selector"] { display: none; }
+
+/* Órbitas rotatorias */
+.interactive-panel { position: relative; width: 300px; height: 300px; flex-shrink: 0; }
+.interactive-panel::before, .interactive-panel::after {
+    content: ''; position: absolute; top: 5%; left: 5%; width: 90%; height: 90%;
+    border: 1px dashed rgba(37, 99, 235, 0.15); border-radius: 50%; pointer-events: none;
+}
+.interactive-panel::before { animation: spinCircle 25s linear infinite; }
+.interactive-panel::after { border-style: dotted; animation: spinCircle 15s linear infinite reverse; }
+
+@keyframes spinCircle { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+.energy-core {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 105px; height: 105px; background: var(--white); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 0 30px rgba(15, 23, 42, 0.05); z-index: 3; transition: all 0.5s ease;
+}
+.energy-core img { width: 60px; height: auto; }
+.shield-aura { position: absolute; width: 100%; height: 100%; border: 3px solid transparent; border-radius: 50%; transition: all 0.5s ease; box-sizing: border-box; }
+
+.trigger-node {
+    position: absolute; width: 55px; height: 55px; background: var(--white);
+    border: 1px solid var(--soft-border); border-radius: 50%; display: flex;
+    align-items: center; justify-content: center; cursor: pointer; font-size: 1.1rem;
+    z-index: 4; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.15); box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+.trigger-node:hover { transform: scale(1.15); }
+
+.n-math { top: 15px; left: 50%; transform: translateX(-50%); color: var(--sh-red); }
+.n-lectura { bottom: 35px; left: 35px; color: var(--sh-naranja); }
+.n-lengua { bottom: 35px; right: 35px; color: var(--sh-gold); }
+
+/* 🖥️ DETALLE ESPECIAL 4: MONITOR CON RASTERIZADO LÁSER CINEMÁTICO */
+.data-display-screen {
+    flex-grow: 1; background: var(--white); border: 1px solid var(--soft-border);
+    border-radius: 20px; padding: 35px; min-height: 220px; display: flex; align-items: center;
+    text-align: left; box-shadow: var(--sombra-premium); position: relative; overflow: hidden;
+}
+
+.data-display-screen::after {
+    content: '';
+    position: absolute;
+    top: -100%; left: 0;
+    width: 100%; height: 15px;
+    background: linear-gradient(to bottom, transparent, rgba(37, 99, 235, 0.1), transparent);
+    animation: laserScan 4s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes laserScan {
+    0% { top: -20%; }
+    100% { top: 120%; }
+}
+
+.info-slide { display: none; animation: slideFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.info-slide h5 { font-family: 'Outfit', sans-serif; font-size: 1.3rem; margin-bottom: 12px; font-weight: 700; color: var(--navy-blue); }
+.info-slide p { color: var(--gray-text); font-size: 0.95rem; line-height: 1.6; margin-bottom: 15px; }
+.status-indicator { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #10b981; background: rgba(16, 185, 129, 0.1); padding: 4px 10px; border-radius: 6px; }
+
+@keyframes slideFadeIn { from { opacity: 0; transform: scale(0.98) translateY(10px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+
+/* Gestión Mecánica de Canales checked */
+#select-math:checked ~ .interactive-panel .n-math { background: var(--sh-red); color: var(--white); box-shadow: 0 0 20px rgba(230, 57, 0, 0.4); }
+#select-math:checked ~ .interactive-panel .shield-aura { border-color: var(--sh-red); transform: scale(1.15); filter: drop-shadow(0 0 8px var(--sh-red)); }
+#select-math:checked ~ .data-display-screen .slide-math { display: block; }
+
+#select-lectura:checked ~ .interactive-panel .n-lectura { background: var(--sh-naranja); color: var(--white); box-shadow: 0 0 20px rgba(255, 102, 0, 0.4); }
+#select-lectura:checked ~ .interactive-panel .shield-aura { border-color: var(--sh-naranja); transform: scale(1.15); filter: drop-shadow(0 0 8px var(--sh-naranja)); }
+#select-lectura:checked ~ .data-display-screen .slide-lectura { display: block; }
+
+#select-lengua:checked ~ .interactive-panel .n-lengua { background: var(--sh-gold); color: var(--navy-blue); box-shadow: 0 0 20px rgba(255, 179, 0, 0.4); }
+#select-lengua:checked ~ .interactive-panel .shield-aura { border-color: var(--sh-gold); transform: scale(1.15); filter: drop-shadow(0 0 8px var(--sh-gold)); }
+#select-lengua:checked ~ .data-display-screen .slide-lengua { display: block; }
+/* ==========================================================
+   RESPONSIVE - REPOSITORIO DIGITAL EPO 5
+   ========================================================== */
+
+/* ==========================================================
+   1200px
+   ========================================================== */
+@media (max-width:1200px){
+
+    .layout-contacto{
+        max-width:1000px;
+        padding:0 20px;
+    }
+
+}
+
+/* ==========================================================
+   TABLETS HORIZONTALES
+   ========================================================== */
+@media (max-width:992px){
+
+    .layout-contacto{
+        margin-top:40px;
+    }
+
+    .introduccion-contacto{
+        margin-bottom:45px;
+    }
+
+    .introduccion-contacto h3{
+        font-size:2.3rem;
+    }
+
+    .grid-principal{
+        flex-direction:column;
+    }
+
+    .glass-card{
+        padding:30px;
+    }
+
+    .game-wrapper{
+        flex-direction:column;
+        gap:30px;
+        padding:30px;
+    }
+
+    .interactive-panel{
+        width:270px;
+        height:270px;
+    }
+
+    .data-display-screen{
+        width:100%;
+        min-height:200px;
+    }
+
+}
+
+/* ==========================================================
+   TABLETS
+   ========================================================== */
+@media (max-width:768px){
+
+    .layout-contacto{
+        padding:0 18px;
+    }
+
+    .introduccion-contacto h3{
+        font-size:2rem;
+        line-height:1.25;
+    }
+
+    .introduccion-contacto p{
+        font-size:.95rem;
+    }
+
+    .glass-card{
+        padding:25px;
+        border-radius:20px;
+    }
+
+    .glass-card h4{
+        font-size:1.25rem;
+    }
+
+    .card-icon{
+        top:20px;
+        right:20px;
+    }
+
+    .data-item{
+        gap:15px;
+    }
+
+    .facebook-btn{
+        padding:15px;
+        font-size:.95rem;
+    }
+
+    .map-wrapper{
+        height:200px;
+    }
+
+    .form-header{
+        margin-bottom:25px;
+    }
+
+    .form-header i{
+        font-size:2rem;
+    }
+
+    .custom-form input,
+    .custom-form textarea{
+        padding:15px;
+    }
+
+    .submit-btn{
+        padding:16px;
+        font-size:1rem;
+    }
+
+    .pulse-title{
+        font-size:1.7rem;
+    }
+
+    .pulse-subtitle{
+        font-size:.9rem;
+    }
+
+    .interactive-panel{
+        width:240px;
+        height:240px;
+    }
+
+    .energy-core{
+        width:90px;
+        height:90px;
+    }
+
+    .energy-core img{
+        width:50px;
+    }
+
+    .trigger-node{
+        width:48px;
+        height:48px;
+        font-size:1rem;
+    }
+
+    .data-display-screen{
+        padding:25px;
+        min-height:180px;
+    }
+
+}
+
+/* ==========================================================
+   CELULARES
+   ========================================================== */
+@media (max-width:576px){
+
+    .layout-contacto{
+        margin-top:30px;
+        padding:0 15px;
+    }
+
+    .introduccion-contacto{
+        margin-bottom:35px;
+    }
+
+    .introduccion-contacto h3{
+        font-size:1.65rem;
+    }
+
+    .introduccion-contacto p{
+        font-size:.9rem;
+    }
+
+    .glass-card{
+        padding:20px;
+        border-radius:18px;
+    }
+
+    .glass-card h4{
+        font-size:1.15rem;
+        margin-bottom:20px;
+    }
+
+    .card-icon{
+        font-size:1.1rem;
+        top:18px;
+        right:18px;
+    }
+
+    .data-item{
+        align-items:flex-start;
+        gap:12px;
+    }
+
+    .data-item i{
+        font-size:1.1rem;
+    }
+
+    .data-item a,
+    .data-item p{
+        font-size:.9rem;
+        word-break:break-word;
+    }
+
+    .facebook-btn{
+        font-size:.9rem;
+    }
+
+    .map-wrapper{
+        height:180px;
+    }
+
+    .custom-form input,
+    .custom-form textarea{
+        font-size:.9rem;
+    }
+
+    .submit-btn{
+        width:100%;
+        font-size:.95rem;
+    }
+
+    .grand-finale-activity{
+        margin:60px 0 80px;
+    }
+
+    .pulse-title{
+        font-size:1.45rem;
+    }
+
+    .pulse-subtitle{
+        font-size:.85rem;
+    }
+
+    .game-wrapper{
+        padding:20px;
+        border-radius:24px;
+    }
+
+    .interactive-panel{
+        width:210px;
+        height:210px;
+    }
+
+    .interactive-panel::before,
+    .interactive-panel::after{
+        display:none;
+    }
+
+    .energy-core{
+        width:80px;
+        height:80px;
+    }
+
+    .energy-core img{
+        width:42px;
+    }
+
+    .trigger-node{
+        width:42px;
+        height:42px;
+        font-size:.9rem;
+    }
+
+    .n-math{
+        top:10px;
+    }
+
+    .n-lectura{
+        left:20px;
+        bottom:20px;
+    }
+
+    .n-lengua{
+        right:20px;
+        bottom:20px;
+    }
+
+    .data-display-screen{
+        padding:20px;
+        min-height:auto;
+    }
+
+    .info-slide h5{
+        font-size:1.1rem;
+    }
+
+    .info-slide p{
+        font-size:.88rem;
+    }
+
+}
+
+/* ==========================================================
+   CELULARES PEQUEÑOS
+   ========================================================== */
+@media (max-width:390px){
+
+    .layout-contacto{
+        padding:0 12px;
+    }
+
+    .introduccion-contacto h3{
+        font-size:1.35rem;
+    }
+
+    .introduccion-contacto p{
+        font-size:.82rem;
+    }
+
+    .glass-card{
+        padding:16px;
+    }
+
+    .glass-card h4{
+        font-size:1rem;
+    }
+
+    .data-item{
+        gap:10px;
+    }
+
+    .facebook-btn{
+        padding:14px;
+        font-size:.85rem;
+    }
+
+    .map-wrapper{
+        height:160px;
+    }
+
+    .interactive-panel{
+        width:180px;
+        height:180px;
+    }
+
+    .energy-core{
+        width:70px;
+        height:70px;
+    }
+
+    .energy-core img{
+        width:36px;
+    }
+
+    .trigger-node{
+        width:38px;
+        height:38px;
+        font-size:.8rem;
+    }
+
+    .data-display-screen{
+        padding:16px;
+    }
+
+    .info-slide h5{
+        font-size:1rem;
+    }
+
+    .info-slide p{
+        font-size:.82rem;
+    }
+
+    .status-indicator{
+        font-size:.62rem;
+    }
+
+}

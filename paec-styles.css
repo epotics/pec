@@ -1,0 +1,766 @@
+/* ==========================================================================
+   ⚡ ESTILOS BASE, VARIABLES ULTRA-PREMIUM Y ANIMACIONES CINEMÁTICAS ⚡
+   ========================================================================== */
+:root {
+    /* Paleta Institucional Refinada */
+    --color-azul-oscuro: #002147;
+    --color-oro: #d4af37;
+    --color-oro-brillante: #f3e5ab;
+    
+    /* Ejes Temáticos con Gradientes */
+    --gradient-mates: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+    --gradient-lectura: linear-gradient(135deg, #e53935 0%, #b71c1c 100%);
+    --gradient-lengua: linear-gradient(135deg, #43a047 0%, #2e7d32 100%);
+    
+    /* Concepto Oculto: Fuego Sharingan 🔥 */
+    --fuego-sharingan: linear-gradient(90deg, #E63900 0%, #FF6600 50%, #d4af37 100%);
+    --shadow-premium: 0 20px 50px rgba(0, 33, 71, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #f6f8fb;
+    color: #2d3748;
+    overflow-x: hidden;
+    /* Suavizado de tipografía en navegadores modernos */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- ANIMACIONES MAGISTRALES --- */
+@keyframes entradaSuave {
+    0% { opacity: 0; transform: translateY(30px) scale(0.98); filter: blur(5px); }
+    100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+@keyframes flotarBurbuja {
+    0% { transform: translateY(0) rotate(0deg) scale(1); }
+    100% { transform: translateY(-35px) rotate(15deg) scale(1.08); }
+}
+
+@keyframes brilloLaser {
+    0% { left: -150%; }
+    50% { left: 150%; }
+    100% { left: 150%; }
+}
+
+@keyframes pulsoAura {
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 0.4; }
+    50% { transform: translate(-50%, -50%) scale(1.15); opacity: 0.7; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 0.4; }
+}
+
+/* Fondo Dinámico Espacial */
+.burbujas-contenedor {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    z-index: -2;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.burbuja {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.08;
+    animation: flotarBurbuja 10s ease-in-out infinite alternate;
+}
+
+.b-azul { top: 5%; left: -5%; width: 450px; height: 450px; background: var(--color-azul-oscuro); }
+.b-oro { bottom: 10%; right: -5%; width: 500px; height: 500px; background: var(--color-oro); animation-delay: -2s; }
+.b-verde { bottom: -10%; left: 15%; width: 400px; height: 400px; background: #43a047; animation-delay: -4s; }
+
+.aura-sh {
+    position: absolute;
+    top: 35%; left: 50%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(230,57,0,0.08) 0%, rgba(255,255,255,0) 75%);
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    animation: pulsoAura 6s infinite ease-in-out;
+}
+
+/* ==========================================================================
+   CONTENEDOR
+   ========================================================================== */
+
+.contenedor-principal {
+    max-width: 1240px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+/* ==========================================================================
+   DISEÑO INTERACTIVO ULTRA-DINÁMICO DEL PAEC 
+   ========================================================================== */
+
+.paec-presentacion {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: var(--shadow-premium);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    position: relative;
+    overflow: hidden;
+    animation: entradaSuave 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Efecto escaneo */
+.paec-presentacion::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(255,255,255,0),
+        rgba(255,255,255,0.7),
+        rgba(255,255,255,0)
+    );
+    transform: skewX(-25deg);
+    pointer-events: none;
+    animation: brilloLaser 6s infinite ease-in-out;
+}
+
+/* ==========================================================
+   DISTRIBUCIÓN CORRECTA 70 / 30
+   ========================================================== */
+
+.paec-info {
+    flex: 0 0 70%;
+}
+
+.paec-media {
+    flex: 0 0 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==========================================================
+   TEXTO
+   ========================================================== */
+
+.paec-tag {
+    background: rgba(0, 33, 71, 0.05);
+    padding: 6px 20px;
+    border-radius: 100px;
+    color: var(--color-azul-oscuro);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 24px;
+    border: 1px solid rgba(0, 33, 71, 0.08);
+}
+
+.paec-info h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3.2rem;
+    color: var(--color-azul-oscuro);
+    line-height: 1.15;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.linea-curva-separador {
+    height: 6px;
+    width: 160px;
+    background: var(--fuego-sharingan);
+    margin: 25px 0;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(230, 57, 0, 0.4);
+}
+
+.paec-info p {
+    font-size: 1.15rem;
+    line-height: 1.85;
+    color: #4a5568;
+    text-align: justify;
+}
+
+/* ==========================================================
+   IMAGEN (CORREGIDA)
+   ========================================================== */
+
+.paec-media img {
+   width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 32px;
+    position: relative;
+    z-index: 2;
+    display: block;
+}
+
+/* Marco decorativo */
+.paec-media::before {
+      content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 3px solid var(--color-oro);
+    border-radius: 36px;
+    z-index: 1;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Hover effects */
+.paec-presentacion:hover .paec-media img {
+    transform: scale(1.04) translateY(-10px);
+}
+
+.paec-presentacion:hover .paec-media::before {
+    transform: translate(-10px, -10px);
+    border-color: var(--color-azul-oscuro);
+}
+
+/* 2. Sección Pilares Interactivos */
+.paec-seccion-titulo h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.8rem;
+    color: var(--color-azul-oscuro);
+    margin-bottom: 14px;
+    letter-spacing: -0.8px;
+}
+
+.subtitulo-limpio {
+    color: #718096;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.paec-lista-pilares {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.pilar-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.01);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.pilar-card:hover {
+    transform: translateY(-8px) scale(1.015);
+    background: #ffffff;
+    box-shadow: 0 30px 65px rgba(0, 33, 71, 0.1);
+    border-color: rgba(212, 175, 55, 0.2);
+}
+
+.pilar-icono {
+    width: 90px; height: 90px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.6rem;
+    flex-shrink: 0;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.03);
+}
+
+/* Rotación elástica premium al pasar el mouse */
+.pilar-card:hover .pilar-icono {
+    transform: scale(1.12) rotate(12deg);
+    border-radius: 30px;
+}
+
+.pilar-mates .pilar-icono { background: #e3f2fd; color: #1e88e5; }
+.pilar-lectura .pilar-icono { background: #ffebee; color: #e53935; }
+.pilar-lengua .pilar-icono { background: #e8f5e9; color: #43a047; }
+
+/* Marcadores de Chakra Activo (Líneas Laterales Líquidas) */
+.pilar-card::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 0; 
+    transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pilar-mates:hover::after { width: 8px; background: var(--gradient-mates); }
+.pilar-lectura:hover::after { width: 8px; background: var(--fuego-sharingan); }
+.pilar-lengua:hover::after { width: 8px; background: var(--gradient-lengua); }
+
+.pilar-texto .pilar-numero {
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.pilar-mates .pilar-numero { color: #1e88e5; }
+.pilar-lectura .pilar-numero { color: #e53935; }
+.pilar-lengua .pilar-numero { color: #43a047; }
+
+.pilar-texto h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.65rem;
+    margin-bottom: 5px;
+    color: var(--color-azul-oscuro);
+    font-weight: 700;
+}
+
+.pilar-texto p {
+    color: #4a5568;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* 3. Grid de Detalles Inferiores */
+.paec-detalles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    margin-bottom: 40px;
+}
+
+.detalle-bloque {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 36px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.015);
+    border-top: 6px solid var(--color-azul-oscuro);
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bloque-estrategia {
+    border-top-color: var(--color-oro);
+}
+
+.detalle-encabezado {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.bloque-audiovisual .detalle-encabezado { color: var(--color-azul-oscuro); }
+.bloque-estrategia .detalle-encabezado { color: var(--color-oro); }
+
+.detalle-encabezado i {
+    font-size: 1.75rem;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.detalle-bloque:hover .detalle-encabezado i {
+    transform: scale(1.25) rotate(-8deg);
+}
+
+.detalle-encabezado h5 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    color: var(--color-azul-oscuro);
+    font-weight: 700;
+}
+
+.detalle-bloque p {
+    color: #4a5568;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    text-align: justify;
+}
+
+.detalle-bloque:hover {
+    box-shadow: 0 35px 70px rgba(0, 33, 71, 0.1);
+    transform: translateY(-10px);
+}
+
+.bloque-audiovisual:hover { border-top-color: var(--color-oro); }
+.bloque-estrategia:hover { border-top-color: var(--color-azul-oscuro); }
+/* ==========================================================
+   RESPONSIVE - PAEC PRESENTACIÓN
+   ========================================================== */
+
+/* ==========================================================
+   DESKTOPS PEQUEÑOS
+   ========================================================== */
+@media (max-width:1200px){
+
+    .contenedor-principal{
+        max-width:100%;
+        padding:0 25px;
+    }
+
+    .paec-presentacion{
+        gap:40px;
+        padding:35px;
+    }
+
+    .paec-info h3{
+        font-size:2.8rem;
+    }
+
+    .paec-media img{
+        height:320px;
+    }
+
+}
+
+/* ==========================================================
+   TABLETS GRANDES
+   ========================================================== */
+@media (max-width:992px){
+
+    .contenedor-principal{
+        margin:40px auto;
+        padding:0 20px;
+    }
+
+    .paec-presentacion{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:35px;
+        padding:35px 30px;
+    }
+
+    .paec-info,
+    .paec-media{
+        flex:0 0 100%;
+        width:100%;
+    }
+
+    .paec-info h3{
+        font-size:2.4rem;
+    }
+
+    .paec-info p{
+        text-align:left;
+        font-size:1.05rem;
+    }
+
+    .linea-curva-separador{
+        margin:20px auto;
+    }
+
+    .paec-media{
+        max-width:520px;
+        margin:auto;
+    }
+
+    .paec-media img{
+        height:320px;
+    }
+
+    .paec-seccion-titulo h3{
+        font-size:2.3rem;
+    }
+
+    .pilar-card{
+        gap:25px;
+        padding:30px;
+    }
+
+    .paec-detalles{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+}
+
+/* ==========================================================
+   TABLETS
+   ========================================================== */
+@media (max-width:768px){
+
+    .contenedor-principal{
+        padding:0 18px;
+    }
+
+    .paec-presentacion{
+        padding:28px 22px;
+        border-radius:28px;
+    }
+
+    .paec-presentacion::before{
+        display:none;
+    }
+
+    .paec-tag{
+        font-size:.72rem;
+        letter-spacing:1px;
+    }
+
+    .paec-info h3{
+        font-size:2rem;
+        line-height:1.2;
+    }
+
+    .paec-info p{
+        font-size:.98rem;
+        line-height:1.7;
+    }
+
+    .linea-curva-separador{
+        width:120px;
+        height:5px;
+    }
+
+    .paec-media img{
+        height:260px;
+        border-radius:24px;
+    }
+
+    .paec-media::before{
+        border-radius:28px;
+    }
+
+    .paec-seccion-titulo{
+        text-align:center;
+    }
+
+    .paec-seccion-titulo h3{
+        font-size:2rem;
+    }
+
+    .subtitulo-limpio{
+        font-size:1rem;
+    }
+
+    .pilar-card{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+        padding:25px;
+        border-radius:24px;
+    }
+
+    .pilar-card:hover{
+        transform:translateY(-5px);
+    }
+
+    .pilar-icono{
+        width:75px;
+        height:75px;
+        font-size:2rem;
+    }
+
+    .pilar-texto h4{
+        font-size:1.45rem;
+    }
+
+    .pilar-texto p{
+        font-size:.95rem;
+    }
+
+    .detalle-bloque{
+        padding:25px;
+        border-radius:24px;
+    }
+
+    .detalle-encabezado{
+        flex-direction:column;
+        text-align:center;
+        gap:12px;
+    }
+
+    .detalle-encabezado h5{
+        font-size:1.35rem;
+    }
+
+    .detalle-bloque p{
+        font-size:.95rem;
+        text-align:left;
+    }
+
+}
+
+/* ==========================================================
+   CELULARES
+   ========================================================== */
+@media (max-width:576px){
+
+    .contenedor-principal{
+        padding:0 15px;
+        margin:30px auto;
+    }
+
+    .paec-presentacion{
+        padding:22px 18px;
+        border-radius:20px;
+    }
+
+    .paec-tag{
+        padding:6px 14px;
+        font-size:.65rem;
+    }
+
+    .paec-info h3{
+        font-size:1.65rem;
+    }
+
+    .paec-info p{
+        font-size:.9rem;
+        line-height:1.65;
+    }
+
+    .linea-curva-separador{
+        width:90px;
+        margin:18px auto;
+    }
+
+    .paec-media img{
+        height:210px;
+        border-radius:18px;
+    }
+
+    .paec-media::before{
+        border-width:2px;
+        border-radius:22px;
+    }
+
+    .paec-seccion-titulo h3{
+        font-size:1.7rem;
+    }
+
+    .subtitulo-limpio{
+        font-size:.92rem;
+    }
+
+    .paec-lista-pilares{
+        gap:20px;
+    }
+
+    .pilar-card{
+        padding:20px;
+        border-radius:20px;
+    }
+
+    .pilar-icono{
+        width:65px;
+        height:65px;
+        font-size:1.7rem;
+        border-radius:18px;
+    }
+
+    .pilar-texto .pilar-numero{
+        font-size:.72rem;
+    }
+
+    .pilar-texto h4{
+        font-size:1.25rem;
+    }
+
+    .pilar-texto p{
+        font-size:.88rem;
+        line-height:1.6;
+    }
+
+    .detalle-bloque{
+        padding:20px;
+        border-radius:18px;
+    }
+
+    .detalle-encabezado i{
+        font-size:1.5rem;
+    }
+
+    .detalle-encabezado h5{
+        font-size:1.15rem;
+    }
+
+    .detalle-bloque p{
+        font-size:.88rem;
+    }
+
+}
+
+/* ==========================================================
+   CELULARES MUY PEQUEÑOS
+   ========================================================== */
+@media (max-width:390px){
+
+    .contenedor-principal{
+        padding:0 12px;
+    }
+
+    .paec-presentacion{
+        padding:18px 15px;
+    }
+
+    .paec-info h3{
+        font-size:1.4rem;
+    }
+
+    .paec-info p{
+        font-size:.82rem;
+    }
+
+    .paec-media img{
+        height:180px;
+    }
+
+    .paec-seccion-titulo h3{
+        font-size:1.45rem;
+    }
+
+    .subtitulo-limpio{
+        font-size:.82rem;
+    }
+
+    .pilar-card{
+        padding:18px;
+    }
+
+    .pilar-icono{
+        width:58px;
+        height:58px;
+        font-size:1.45rem;
+    }
+
+    .pilar-texto h4{
+        font-size:1.08rem;
+    }
+
+    .pilar-texto p{
+        font-size:.8rem;
+    }
+
+    .detalle-bloque{
+        padding:18px;
+    }
+
+    .detalle-encabezado h5{
+        font-size:1rem;
+    }
+
+    .detalle-bloque p{
+        font-size:.8rem;
+    }
+
+}

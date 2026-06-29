@@ -1,0 +1,536 @@
+/* ==========================================================================
+   📚 HOJA DE ESTILOS: ESTRUCTURA DE LA LENGUA — "ARQUITECTURA DEL LENGUAJE"
+   ========================================================================== */
+
+:root {
+    --morado-lengua: #2563eb;       /* Tinta azul real académica */
+    --azul-profundo: #0B1B3D;       /* Azul institucional de la EPO 5 */
+    --cyan-brillo: #06b6d4;         /* Destello neón tipográfico */
+    --gris-texto: #4a5568;
+    --blanco-tarjeta: #ffffff;
+}
+
+/* --- ANIMACIÓN DE ESCRITURA DIGITAL (CURSOR PARPADEANTE) --- */
+@keyframes cursorParpadeo {
+    50% { opacity: 0; }
+}
+
+/* ==========================================================================
+   TARJETAS CONTENEDORAS (.pilar-card)
+   ========================================================================== */
+.pilar-card.mod-lengura {
+    background: var(--blanco-tarjeta);
+    border-radius: 16px;
+    padding: 35px;
+    margin-bottom: 30px;
+    border: 1px solid #e2e8f0;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                border-color 0.3s ease;
+}
+
+/* Marca decorativa superior derecha: Caracteres gramaticales tenues */
+.pilar-card.mod-lengura::before {
+    content: 'A B C { }';
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgba(37, 99, 235, 0.0);
+    letter-spacing: 4px;
+    transition: color 0.3s ease, transform 0.4s ease;
+    transform: translateY(5px);
+    pointer-events: none;
+}
+
+/* Hover de la Tarjeta */
+.pilar-card.mod-lengura:hover {
+    transform: translateY(-6px);
+    border-color: rgba(37, 99, 235, 0.3);
+    box-shadow: 0 20px 40px rgba(11, 27, 61, 0.08), 
+                0 10px 20px rgba(37, 99, 235, 0.02);
+}
+
+/* Revelar las letras flotantes al pasar el cursor */
+.pilar-card.mod-lengura:hover::before {
+    color: rgba(37, 99, 235, 0.15);
+    transform: translateY(0);
+}
+
+/* ==========================================================================
+   ELEMENTOS INTERNOS DE LA TARJETA (TEXTOS Y TAGS)
+   ========================================================================== */
+.info-tema h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    color: var(--azul-profundo);
+    font-weight: 700;
+    margin: 15px 0 12px 0;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Efecto de cursor tipográfico interactivo en el título */
+.info-tema h4::after {
+    content: '|';
+    color: var(--cyan-brillo);
+    font-weight: 300;
+    margin-left: 6px;
+    opacity: 0;
+    animation: cursorParpadeo 0.8s infinite;
+}
+
+.pilar-card.mod-lengura:hover h4 {
+    color: var(--morado-lengua);
+}
+
+.pilar-card.mod-lengura:hover h4::after {
+    opacity: 1;
+}
+
+.info-tema p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--gris-texto);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* ==========================================================================
+   REPRODUCTORES DE VIDEO COMPLETO (DRIVE EMBED)
+   ========================================================================== */
+.reproductor-video-completo {
+    width: 60%;
+    max-width: 700px;
+    height: 380px;
+    margin: 0 auto; /*CENTRADO */
+    border-radius: 28px;
+    overflow: hidden;
+    background: #000000;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reproductor-video-completo iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.pilar-card.mod-lengura:hover .reproductor-video-completo {
+    border-color: rgba(37, 99, 235, 0.4);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.12);
+}
+
+/* ==========================================================================
+   BARRA DE RECURSO PDF Y BOTÓN DE DESCARGA
+   ========================================================================== */
+.barra-recurso-lineal.item-pdf {
+    margin-top: 25px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.barra-recurso-lineal.item-pdf:hover {
+    background: #ffffff;
+    border-color: var(--morado-lengua);
+}
+
+.info-recurso-lineal {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-recurso-lineal i {
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Animación sutil del icono PDF en hover */
+.barra-recurso-lineal.item-pdf:hover .info-recurso-lineal i {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.info-recurso-lineal span {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.95rem;
+    color: #1a202c;
+    line-height: 1.4;
+}
+
+/* Botón de descarga con efecto reflejo láser */
+.btn-accion-lineal.btn-pdf {
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    transition: transform 0.2s ease, box-shadow 0.3s ease, filter 0.2s ease;
+}
+
+.btn-accion-lineal.btn-pdf:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+    filter: brightness(1.1);
+}
+
+.btn-accion-lineal.btn-pdf i {
+    transition: transform 0.2s ease;
+}
+
+.btn-accion-lineal.btn-pdf:hover i {
+    transform: translateY(2px);
+}
+
+/* ==========================================================================
+   RESPONSIVIDAD (MEDIA QUERIES)
+   ========================================================================== */
+@media (max-width: 992px) {
+    .reproductor-video-completo {
+        height: 380px;
+    }
+    .barra-recurso-lineal.item-pdf {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .info-recurso-lineal {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .btn-accion-lineal.btn-pdf {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .pilar-card.mod-lengura {
+        padding: 20px;
+    }
+    .info-tema h4 {
+        font-size: 1.4rem;
+    }
+    .reproductor-video-completo {
+        height: 220px;
+    }
+}
+
+
+/* ==========================================================================
+   ✒️ PERSONALIZACIÓN TEMÁTICA: LA EDITORIAL DE LA LENGUA
+   ========================================================================== */
+
+/* Fondo decorativo general para todas las tarjetas: Símbolo de párrafo clásico ¶ */
+.pilar-card.mod-lengura::after {
+    content: "¶";
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 7rem;
+    color: rgba(37, 99, 235, 0.03);
+    pointer-events: none;
+    transition: color 0.3s ease;
+}
+
+.pilar-card.mod-lengura:hover::after {
+    color: rgba(37, 99, 235, 0.06);
+}
+
+
+/* ==========================================================================
+   📜 EFECTO MUCHO MÁS ESPECIAL: MANUSCRITO DE "SEMÁNTICA Y GRAMÁTICA" (TEMA 03)
+   ========================================================================== */
+
+/* Transformación completa de la tercera tarjeta en un códice/manuscrito premium */
+.pilar-card.mod-lengura:nth-of-type(3) {
+    background: #fdfbf7; /* Color papiro antiguo claro */
+    border: 1px solid #d4af37; /* Borde color oro antiguo */
+    box-shadow: inset 0 0 40px rgba(212, 175, 55, 0.08), 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Cambia las letras superiores por un signo "Caligráfico de Pluma" */
+.pilar-card.mod-lengura:nth-of-type(3)::before {
+    content: '✒️';
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+/* Detalle especial en el título: Letra Capital o Estilo de Tinta clásica */
+.pilar-card.mod-lengura:nth-of-type(3) .info-tema h4 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #1e293b;
+    border-bottom: 2px dashed rgba(214, 175, 55, 0.5);
+    padding-bottom: 4px;
+}
+
+/* Modificación al Video del Tema 3: Efecto marco de cuadro de exposición */
+.pilar-card.mod-lengura:nth-of-type(3) .reproductor-video-completo {
+    border: 4px double #d4af37;
+    box-shadow: 0 12px 28px rgba(27, 22, 10, 0.15);
+}
+
+/* Barra de recurso del Tema 3: Diseño tipo pergamino enrollado horizontal */
+.pilar-card.mod-lengura:nth-of-type(3) .barra-recurso-lineal.item-pdf {
+    background: #ffffff;
+    border: 1px solid #e4e4e7;
+    border-left: 6px solid #d4af37; /* El toque heráldico de la barra */
+    position: relative;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+/* El botón de descarga del Tema 3: Pasa de un azul plano a un "Oro Noble" con animación elegante */
+.pilar-card.mod-lengura:nth-of-type(3) .btn-pdf {
+    background: linear-gradient(135deg, #c5a028 0%, #d4af37 50%, #b38f1d 100%) !important;
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pilar-card.mod-lengura:nth-of-type(3) .btn-pdf:hover {
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+    transform: translateY(-3px) scale(1.02);
+}
+/* ==========================================================
+   RESPONSIVE - ESTRUCTURA DE LA LENGUA
+   ========================================================== */
+
+/* ==========================================================
+   LAPTOPS
+   ========================================================== */
+@media (max-width:1200px){
+
+    .pilar-card.mod-lengura{
+        padding:32px;
+    }
+
+    .reproductor-video-completo{
+        width:75%;
+        height:340px;
+    }
+
+}
+
+/* ==========================================================
+   TABLETS GRANDES
+   ========================================================== */
+@media (max-width:992px){
+
+    .pilar-card.mod-lengura{
+        padding:30px;
+    }
+
+    .pilar-card.mod-lengura::before{
+        right:20px;
+        top:20px;
+        font-size:1rem;
+    }
+
+    .info-tema h4{
+        font-size:1.65rem;
+    }
+
+    .info-tema p{
+        font-size:.95rem;
+    }
+
+    .reproductor-video-completo{
+        width:90%;
+        height:320px;
+    }
+
+    .barra-recurso-lineal.item-pdf{
+        flex-direction:column;
+        align-items:flex-start;
+        text-align:left;
+        padding:22px;
+    }
+
+    .info-recurso-lineal{
+        width:100%;
+    }
+
+    .btn-accion-lineal.btn-pdf{
+        width:100%;
+        justify-content:center;
+    }
+
+}
+
+/* ==========================================================
+   TABLETS
+   ========================================================== */
+@media (max-width:768px){
+
+    .pilar-card.mod-lengura{
+        padding:25px;
+        border-radius:18px;
+    }
+
+    .pilar-card.mod-lengura::before,
+    .pilar-card.mod-lengura::after{
+        opacity:.35;
+    }
+
+    .pilar-card.mod-lengura:hover{
+        transform:translateY(-4px);
+    }
+
+    .info-tema h4{
+        font-size:1.5rem;
+        line-height:1.3;
+    }
+
+    .info-tema p{
+        font-size:.92rem;
+        margin-bottom:20px;
+    }
+
+    .reproductor-video-completo{
+        width:100%;
+        height:270px;
+        border-radius:20px;
+    }
+
+    .info-recurso-lineal{
+        gap:12px;
+    }
+
+    .info-recurso-lineal span{
+        font-size:.9rem;
+    }
+
+}
+
+/* ==========================================================
+   CELULARES
+   ========================================================== */
+@media (max-width:576px){
+
+    .pilar-card.mod-lengura{
+        padding:20px;
+        border-radius:16px;
+    }
+
+    .pilar-card.mod-lengura::before{
+        display:none;
+    }
+
+    .pilar-card.mod-lengura::after{
+        font-size:5rem;
+        bottom:-10px;
+    }
+
+    .info-tema h4{
+        font-size:1.3rem;
+        margin-bottom:10px;
+    }
+
+    .info-tema h4::after{
+        display:none;
+    }
+
+    .info-tema p{
+        font-size:.88rem;
+        line-height:1.6;
+    }
+
+    .reproductor-video-completo{
+        width:100%;
+        height:220px;
+        border-radius:16px;
+    }
+
+    .barra-recurso-lineal.item-pdf{
+        padding:18px;
+        border-radius:14px;
+    }
+
+    .info-recurso-lineal{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .info-recurso-lineal i{
+        font-size:1.8rem;
+    }
+
+    .info-recurso-lineal span{
+        font-size:.85rem;
+    }
+
+    .btn-accion-lineal.btn-pdf{
+        width:100%;
+        padding:14px 18px;
+        font-size:.88rem;
+    }
+
+}
+
+/* ==========================================================
+   CELULARES PEQUEÑOS
+   ========================================================== */
+@media (max-width:390px){
+
+    .pilar-card.mod-lengura{
+        padding:16px;
+    }
+
+    .info-tema h4{
+        font-size:1.15rem;
+    }
+
+    .info-tema p{
+        font-size:.82rem;
+    }
+
+    .reproductor-video-completo{
+        height:180px;
+    }
+
+    .barra-recurso-lineal.item-pdf{
+        padding:15px;
+    }
+
+    .info-recurso-lineal i{
+        font-size:1.6rem;
+    }
+
+    .info-recurso-lineal span{
+        font-size:.8rem;
+    }
+
+    .btn-accion-lineal.btn-pdf{
+        padding:12px 15px;
+        font-size:.8rem;
+    }
+
+}

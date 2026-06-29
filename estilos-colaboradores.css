@@ -1,0 +1,546 @@
+/* ==========================================================================
+   ESTILOS PREMIUM LIGHT MODE (VERSIÓN CON DESTELLO AZUL EN EL CARD DE JUAN)
+   ========================================================================== */
+
+.body-light-mode {
+    background-color: #f8fafc !important;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.02) 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+    color: #1e2229 !important;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.contenedor-principal-fijo {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ENCABEZADO */
+.bienvenida-limpia-centro {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+.bienvenida-limpia-centro h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.8rem; font-weight: 800; color: #0f121d; margin: 10px 0;
+}
+.desc-cabecera { color: #565e6d !important; font-size: 1.1rem; max-width: 650px; margin: 0 auto; }
+
+/* MENCIÓN HONORÍFICA */
+.bloque-pergamino-profesor.especial-premium {
+    position: relative;
+    background: linear-gradient(135deg, #ffffff, #fffdf6);
+    border-radius: 24px;
+    border: 2px solid #ffcc00;
+    padding: 45px 35px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(255, 204, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.2), box-shadow 0.4s ease;
+}
+.bloque-pergamino-profesor.especial-premium:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 20px 45px rgba(255, 180, 0, 0.18);
+    border-color: #ffaa00;
+}
+.dorada-brillante {
+    background: linear-gradient(135deg, #ffe066, #ffb300);
+    animation: pulsoSuave 2s infinite alternate;
+}
+.rayo-separador-animado {
+    height: 3px; width: 80px; background: linear-gradient(90deg, transparent, #ffb300, #ff6600, transparent);
+    margin: 15px auto; transition: width 0.3s ease;
+}
+.bloque-pergamino-profesor.especial-premium:hover .rayo-separador-animado { width: 150px; }
+
+.destello-decorativo {
+    position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+    transform: skewX(-25deg); pointer-events: none;
+}
+.bloque-pergamino-profesor.especial-premium:hover .destello-decorativo {
+    left: 150%; transition: left 0.8s ease-in-out;
+}
+
+/* ESPACIADO ENTRE BLOQUES */
+.espaciador-bloques-grande {
+    height: 85px;
+    width: 100%;
+    display: block;
+}
+
+/* FOTO GRUPAL */
+.marco-foto-principal-chica {
+    max-width: 380px; margin: 0 auto 50px; border-radius: 24px; overflow: hidden;
+    border: 6px solid #ffffff; box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+.foto-grupal-img { width: 100%; height: auto; display: block; }
+
+/* PERFILES FLOTANTES */
+.contenedor-perfiles-flotantes {
+    display: flex; flex-direction: column; gap: 25px; margin: 40px auto; max-width: 850px;
+}
+.perfil-flotante {
+    background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.04); border-radius: 28px; padding: 30px;
+    display: flex; align-items: center; gap: 25px; transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.perfil-flotante:hover {
+    transform: translateY(-5px); background: #ffffff;
+}
+.globo-icono {
+    width: 65px; height: 65px; border-radius: 22px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; flex-shrink: 0;
+}
+
+/* Clases de colores base */
+.icon-o { background: #fff3e0; color: #e65100; }
+.icon-v { background: #f3e5f5; color: #7b1fa2; }
+.icon-a { background: #e1f5fe; color: #0288d1; }
+
+.info-perfil h5 { font-family: 'Outfit', sans-serif; font-size: 1.4rem; font-weight: 700; color: #0f121d; margin: 0 0 6px 0; }
+.info-perfil p { color: #565e6d; font-size: 0.95rem; line-height: 1.5; margin: 0; }
+.badge-rol { font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 8px; display: inline-block; margin-bottom: 8px; }
+
+.b-o { background: #ffe0b2; color: #e65100; }
+.b-v { background: #efe5fd; color: #7b1fa2; }
+.b-a { background: #e1f5fe; color: #0288d1; }
+
+/* Ximena es Naranja */
+.card-ximena-unica { border: 1px solid rgba(230, 81, 0, 0.15); }
+.card-ximena-unica:hover { border-color: #e65100; box-shadow: 0 20px 40px rgba(230, 81, 0, 0.08); }
+
+/* Belinda es Morado Violeta */
+.card-belinda-unica { border: 1px solid rgba(142, 68, 173, 0.15); }
+.card-belinda-unica:hover { border-color: #7b1fa2; box-shadow: 0 20px 40px rgba(142, 68, 173, 0.08); }
+.card-belinda-unica:hover .shuriken-gira { animation: superGira 1.2s infinite linear; }
+
+/* ==========================================================================
+   JUAN CON DESTELLO AZUL EN EL CONTORNO (ANIMACIÓN CONSTANTE Y AL HOVER)
+   ========================================================================== */
+.card-juan {
+    border: 1px solid rgba(2, 136, 209, 0.2);
+    animation: pulsoAzulFino 2.5s infinite alternate ease-in-out;
+}
+.card-juan:hover {
+    border-color: #0288d1;
+    animation: pulsoAzulIntenso 1.5s infinite alternate ease-in-out;
+}
+
+/* FOTO SECRETA DE BROMA */
+.caja-misterio-fog {
+    text-align: center; background: #ffffff; border: 2px dashed #ff5555; border-radius: 24px; padding: 30px; max-width: 400px; margin: 40px auto;
+}
+.alerta-broma { color: #ff5555; font-weight: 800; font-size: 0.8rem; letter-spacing: 2px; display: block; margin-bottom: 15px; }
+.contenedor-imagen-borrosa {
+    position: relative; width: 170px; height: 170px; margin: 0 auto; border-radius: 50%; overflow: hidden; border: 4px solid #ff5555; cursor: pointer;
+}
+.foto-secreta-blur { width: 100%; height: 100%; object-fit: cover; filter: blur(15px); transition: filter 0.4s ease; }
+.capa-texto-oculto {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.85); color: #ff5555; font-size: 0.8rem; font-weight: 700; pointer-events: none;
+}
+.contenedor-imagen-borrosa:hover .foto-secreta-blur { filter: blur(0px); }
+.contenedor-imagen-borrosa:hover .capa-texto-oculto { opacity: 0; }
+.marquesina-texto-random { margin-top: 15px; padding-top: 15px; border-top: 1px dashed rgba(255, 85, 85, 0.2); }
+.txt-random { font-family: monospace; color: #cc4400; font-size: 0.85rem; font-weight: bold; }
+
+/* ACTIVIDAD FINAL: RUETA DE FORTUNA */
+.seccion-ruleta-frases {
+    margin: 60px auto 40px; max-width: 750px; padding: 0 15px;
+}
+.encabezado-ruleta { text-align: center; margin-bottom: 30px; }
+.encabezado-ruleta h3 { font-family: 'Outfit', sans-serif; font-size: 1.8rem; font-weight: 800; color: #0f121d; }
+.subtitulo-ruleta { color: #565e6d; font-size: 0.95rem; }
+
+.contenedor-generador-fortuna {
+    background: #ffffff; border: 2px solid #0f121d; border-radius: 24px; padding: 35px; box-shadow: 5px 5px 0px #0f121d; text-align: center;
+}
+.caja-display-frase {
+    min-height: 110px; display: flex; flex-direction: column; justify-content: center; align-items: center;
+    background: #fafbfc; border-radius: 16px; padding: 20px; margin-bottom: 25px;
+    border: 2px dashed rgba(0,0,0,0.1); transition: all 0.2s ease;
+}
+.frase-actual {
+    font-size: 1.05rem; color: #1e2229; line-height: 1.5; font-weight: 600; font-style: italic; margin: 0 0 10px 0;
+}
+.autor-frase {
+    font-size: 0.82rem; font-weight: 800; color: #0f121d; text-transform: uppercase; letter-spacing: 1px; transition: color 0.2s;
+}
+.bloque-accion-ruleta { display: flex; justify-content: center; }
+.btn-invocar-frase {
+    font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1rem; color: #ffffff; background: #0f121d;
+    border: none; padding: 15px 35px; border-radius: 50px; cursor: pointer;
+    box-shadow: 0 6px 20px rgba(15, 18, 29, 0.15); transition: all 0.2s ease; display: flex; align-items: center; gap: 10px;
+}
+.btn-invocar-frase:hover {
+    background: #e65100; transform: translateY(-3px); box-shadow: 0 10px 25px rgba(230, 81, 0, 0.3);
+}
+.btn-invocar-frase:active { transform: translateY(1px); }
+.icon-rayo-btn { color: #ffcc00; animation: brillaRayo 1s infinite alternate; }
+
+/* ANIMACIONES */
+.animacion-shake {
+    animation: sacudidaRapida 0.25s infinite ease-in-out;
+}
+
+@keyframes pulsoAzulFino {
+    0% { box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02); }
+    100% { box-shadow: 0 8px 20px rgba(2, 136, 209, 0.12); }
+}
+
+@keyframes pulsoAzulIntenso {
+    0% { box-shadow: 0 10px 25px rgba(2, 136, 209, 0.15); transform: translateY(-5px); }
+    100% { box-shadow: 0 15px 35px rgba(2, 136, 209, 0.35); transform: translateY(-7px); }
+}
+
+@keyframes sacudidaRapida {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-3px, 2px); }
+    50% { transform: translate(3px, -1px); }
+    75% { transform: translate(-2px, -2px); }
+    100% { transform: translate(2px, 1px); }
+}
+@keyframes superGira {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes pulsoSuave {
+    from { box-shadow: 0 6px 15px rgba(255, 204, 0, 0.2); }
+    to { box-shadow: 0 6px 25px rgba(255, 165, 0, 0.4); }
+}
+@keyframes brillaRayo {
+    from { opacity: 0.7; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1.1); }
+}
+/* ==========================================================
+   RESPONSIVE PREMIUM - LIGHT MODE
+   ========================================================== */
+
+/* ==========================================================
+   1200px
+   ========================================================== */
+@media (max-width:1200px){
+
+    .contenedor-principal-fijo{
+        max-width:95%;
+        padding:20px;
+    }
+
+}
+
+/* ==========================================================
+   TABLETS (992px)
+   ========================================================== */
+@media (max-width:992px){
+
+    .bienvenida-limpia-centro{
+        padding:35px 20px 15px;
+    }
+
+    .bienvenida-limpia-centro h3{
+        font-size:2.3rem;
+    }
+
+    .desc-cabecera{
+        font-size:1rem;
+    }
+
+    .bloque-pergamino-profesor.especial-premium{
+        padding:35px 28px;
+    }
+
+    .espaciador-bloques-grande{
+        height:60px;
+    }
+
+    .marco-foto-principal-chica{
+        max-width:330px;
+    }
+
+    .contenedor-perfiles-flotantes{
+        gap:20px;
+    }
+
+    .perfil-flotante{
+        padding:25px;
+        gap:20px;
+    }
+
+    .globo-icono{
+        width:60px;
+        height:60px;
+        font-size:1.6rem;
+    }
+
+    .info-perfil h5{
+        font-size:1.25rem;
+    }
+
+    .contenedor-generador-fortuna{
+        padding:30px;
+    }
+
+}
+
+/* ==========================================================
+   TABLETS (768px)
+   ========================================================== */
+@media (max-width:768px){
+
+    .contenedor-principal-fijo{
+        padding:18px;
+    }
+
+    .bienvenida-limpia-centro{
+        padding:30px 15px;
+    }
+
+    .bienvenida-limpia-centro h3{
+        font-size:2rem;
+        line-height:1.25;
+    }
+
+    .desc-cabecera{
+        font-size:.95rem;
+    }
+
+    .bloque-pergamino-profesor.especial-premium{
+        padding:30px 22px;
+        border-radius:22px;
+    }
+
+    .marco-foto-principal-chica{
+        max-width:300px;
+        margin-bottom:40px;
+    }
+
+    .perfil-flotante{
+        flex-direction:column;
+        text-align:center;
+        align-items:center;
+        padding:25px 22px;
+    }
+
+    .info-perfil{
+        width:100%;
+    }
+
+    .globo-icono{
+        margin-bottom:8px;
+    }
+
+    .badge-rol{
+        margin:0 auto 10px;
+    }
+
+    .caja-misterio-fog{
+        padding:25px;
+    }
+
+    .contenedor-imagen-borrosa{
+        width:150px;
+        height:150px;
+    }
+
+    .seccion-ruleta-frases{
+        margin:50px auto 35px;
+    }
+
+    .encabezado-ruleta h3{
+        font-size:1.6rem;
+    }
+
+    .contenedor-generador-fortuna{
+        padding:25px;
+        border-radius:22px;
+    }
+
+    .frase-actual{
+        font-size:1rem;
+    }
+
+}
+
+/* ==========================================================
+   CELULARES (576px)
+   ========================================================== */
+@media (max-width:576px){
+
+    .contenedor-principal-fijo{
+        padding:15px;
+    }
+
+    .bienvenida-limpia-centro h3{
+        font-size:1.65rem;
+    }
+
+    .desc-cabecera{
+        font-size:.92rem;
+    }
+
+    .bloque-pergamino-profesor.especial-premium{
+        padding:24px 18px;
+        border-radius:18px;
+    }
+
+    .rayo-separador-animado{
+        width:60px;
+    }
+
+    .bloque-pergamino-profesor.especial-premium:hover
+    .rayo-separador-animado{
+        width:110px;
+    }
+
+    .espaciador-bloques-grande{
+        height:40px;
+    }
+
+    .marco-foto-principal-chica{
+        max-width:240px;
+        border-width:4px;
+        border-radius:18px;
+    }
+
+    .perfil-flotante{
+        border-radius:22px;
+        padding:20px 18px;
+    }
+
+    .globo-icono{
+        width:55px;
+        height:55px;
+        border-radius:18px;
+        font-size:1.45rem;
+    }
+
+    .info-perfil h5{
+        font-size:1.1rem;
+    }
+
+    .info-perfil p{
+        font-size:.9rem;
+    }
+
+    .badge-rol{
+        font-size:.7rem;
+        padding:4px 10px;
+    }
+
+    .caja-misterio-fog{
+        padding:20px 15px;
+        border-radius:18px;
+    }
+
+    .contenedor-imagen-borrosa{
+        width:135px;
+        height:135px;
+    }
+
+    .txt-random{
+        font-size:.78rem;
+    }
+
+    .encabezado-ruleta h3{
+        font-size:1.4rem;
+    }
+
+    .subtitulo-ruleta{
+        font-size:.88rem;
+    }
+
+    .contenedor-generador-fortuna{
+        padding:20px 18px;
+        border-radius:18px;
+        box-shadow:3px 3px 0 #0f121d;
+    }
+
+    .caja-display-frase{
+        min-height:95px;
+        padding:18px;
+    }
+
+    .frase-actual{
+        font-size:.92rem;
+    }
+
+    .autor-frase{
+        font-size:.75rem;
+    }
+
+    .btn-invocar-frase{
+        width:100%;
+        justify-content:center;
+        padding:14px 20px;
+        font-size:.95rem;
+    }
+
+}
+
+/* ==========================================================
+   CELULARES PEQUEÑOS (390px)
+   ========================================================== */
+@media (max-width:390px){
+
+    .bienvenida-limpia-centro{
+        padding:25px 10px;
+    }
+
+    .bienvenida-limpia-centro h3{
+        font-size:1.45rem;
+    }
+
+    .desc-cabecera{
+        font-size:.85rem;
+    }
+
+    .bloque-pergamino-profesor.especial-premium{
+        padding:18px 15px;
+    }
+
+    .marco-foto-principal-chica{
+        max-width:200px;
+    }
+
+    .perfil-flotante{
+        padding:18px 15px;
+    }
+
+    .globo-icono{
+        width:50px;
+        height:50px;
+        font-size:1.3rem;
+    }
+
+    .info-perfil h5{
+        font-size:1rem;
+    }
+
+    .info-perfil p{
+        font-size:.85rem;
+    }
+
+    .contenedor-imagen-borrosa{
+        width:120px;
+        height:120px;
+    }
+
+    .encabezado-ruleta h3{
+        font-size:1.2rem;
+    }
+
+    .frase-actual{
+        font-size:.85rem;
+        line-height:1.45;
+    }
+
+    .btn-invocar-frase{
+        font-size:.88rem;
+        padding:13px 16px;
+    }
+
+}
+
